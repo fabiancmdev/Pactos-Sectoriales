@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'AchsNuevaSansRegular';
+    src: url('../fonts/ACHSNuevaSans-Regular.woff2') format('woff2'),
+        url('../fonts/ACHSNuevaSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AchsNuevaSansBold';
+    src: url('../fonts/ACHSNuevaSans-Bold.woff2') format('woff2'),
+        url('../fonts/ACHSNuevaSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AchsNuevaSerifBold';
+    src: url('../fonts/ACHSNuevaSerif-Bold.woff2') format('woff2'),
+        url('../fonts/ACHSNuevaSerif-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    transition: all .2s ease-in-out;
+}
+h1,h2{
+    font-family: 'AchsNuevaSansBold';
+}
+h4,p{
+    font-family: 'AchsNuevaSansRegular';
+}
+p{
+    color: #787878;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;
+}
+@media (max-width: 991.98px) {
+    .achsPactos{
+        &__queDeboHacer{
+            .row-steps{
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.achsPactos{
+    &__banner{
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 0 80px 80px;
+        img{
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        h2, h4{
+            color: white;
+            position: relative;
+        }
+        h4{
+            span{
+                color: #7EFF45;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    &__diag{
+        h4{
+            font-size: 1.3rem;
+        }
+        &-step{
+            display: flex;
+            align-items: center;
+            span{
+                background-color: #13C045;
+                color: white;
+                display: flex;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                margin-right: 8px;
+                justify-content: center;
+                align-items: center;
+            }
+            p{
+                line-height: 18px;
+            }
+        }
+        &-btn{
+            background-color: #13C045;
+            color: white;
+            font-family: 'AchsNuevaSansBold';
+            border-radius: 30px;
+            font-size: 15px;
+            text-decoration: none;
+            &:hover{
+                background-color: #004C14;
+            }
+        }
+    }
+    &__queEs,
+    &__impulsando{
+        background-color: #f9f9f5;
+        h1{
+            color: #13C045;
+            font-size: 36px;
+        }
+        h2{
+            color: #13C045;
+        }
+        figure{
+            border-radius: 24px;
+            overflow: hidden;
+        }
+        p{
+            strong{
+                font-family: 'AchsNuevaSansBold';
+            }
+        }
+    }
+    &__queDeboHacer,
+    &__pretendemos{
+        h2{
+            color: #13C045;
+        }
+    }
+    &__queDeboHacer{
+        background-color: #eaeade;
+        .row-steps{
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 2.5rem;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background-color: #004C14;
+                width: 70%;
+                height: 2px;
+            }
+        }
+        span{
+            background-color: #004C14;
+            color: white;
+            font-size: 17px;
+            padding: 2px 15px;
+            border-radius: 20px;
+            font-family: 'AchsNuevaSansRegular';
+            display: block;
+            width: max-content;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+        }
+        figure{
+            background-color: #fff;
+            height: 76px;
+            width: 76px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        h6{
+            font-family: 'AchsNuevaSansBold';
+            color: #787878;
+        }
+        p{
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &-btn{
+            background-color: #13C045;
+            color: white;
+            font-family: 'AchsNuevaSansBold';
+            border-radius: 30px;
+            font-size: 15px;
+            text-decoration: none;
+            &:hover{
+                background-color: #004C14;
+            }
+        }
+    }
+}

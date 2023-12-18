@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "AchsNuevaSansRegular";
+  src: url("../fonts/ACHSNuevaSans-Regular.woff2") format("woff2"), url("../fonts/ACHSNuevaSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AchsNuevaSansBold";
+  src: url("../fonts/ACHSNuevaSans-Bold.woff2") format("woff2"), url("../fonts/ACHSNuevaSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AchsNuevaSerifBold";
+  src: url("../fonts/ACHSNuevaSerif-Bold.woff2") format("woff2"), url("../fonts/ACHSNuevaSerif-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+h1, h2 {
+  font-family: "AchsNuevaSansBold";
+}
+
+h4, p {
+  font-family: "AchsNuevaSansRegular";
+}
+
+p {
+  color: #787878;
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0;
+}
+
+@media (max-width: 991.98px) {
+  .achsPactos__queDeboHacer .row-steps::before {
+    display: none;
+  }
+}
+.achsPactos__banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 80px 80px;
+}
+.achsPactos__banner img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.achsPactos__banner h2, .achsPactos__banner h4 {
+  color: white;
+  position: relative;
+}
+.achsPactos__banner h4 span {
+  color: #7EFF45;
+}
+.achsPactos__banner h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.achsPactos__diag h4 {
+  font-size: 1.3rem;
+}
+.achsPactos__diag-step {
+  display: flex;
+  align-items: center;
+}
+.achsPactos__diag-step span {
+  background-color: #13C045;
+  color: white;
+  display: flex;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.achsPactos__diag-step p {
+  line-height: 18px;
+}
+.achsPactos__diag-btn {
+  background-color: #13C045;
+  color: white;
+  font-family: "AchsNuevaSansBold";
+  border-radius: 30px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.achsPactos__diag-btn:hover {
+  background-color: #004C14;
+}
+.achsPactos__queEs, .achsPactos__impulsando {
+  background-color: #f9f9f5;
+}
+.achsPactos__queEs h1, .achsPactos__impulsando h1 {
+  color: #13C045;
+  font-size: 36px;
+}
+.achsPactos__queEs h2, .achsPactos__impulsando h2 {
+  color: #13C045;
+}
+.achsPactos__queEs figure, .achsPactos__impulsando figure {
+  border-radius: 24px;
+  overflow: hidden;
+}
+.achsPactos__queEs p strong, .achsPactos__impulsando p strong {
+  font-family: "AchsNuevaSansBold";
+}
+.achsPactos__queDeboHacer h2, .achsPactos__pretendemos h2 {
+  color: #13C045;
+}
+.achsPactos__queDeboHacer {
+  background-color: #eaeade;
+}
+.achsPactos__queDeboHacer .row-steps {
+  position: relative;
+}
+.achsPactos__queDeboHacer .row-steps::before {
+  content: "";
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #004C14;
+  width: 70%;
+  height: 2px;
+}
+.achsPactos__queDeboHacer span {
+  background-color: #004C14;
+  color: white;
+  font-size: 17px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  font-family: "AchsNuevaSansRegular";
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+.achsPactos__queDeboHacer figure {
+  background-color: #fff;
+  height: 76px;
+  width: 76px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.achsPactos__queDeboHacer h6 {
+  font-family: "AchsNuevaSansBold";
+  color: #787878;
+}
+.achsPactos__queDeboHacer p {
+  font-size: 14px;
+  line-height: 18px;
+}
+.achsPactos__queDeboHacer-btn {
+  background-color: #13C045;
+  color: white;
+  font-family: "AchsNuevaSansBold";
+  border-radius: 30px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.achsPactos__queDeboHacer-btn:hover {
+  background-color: #004C14;
+}/*# sourceMappingURL=styles.css.map */
