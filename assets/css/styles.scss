@@ -35,7 +35,7 @@ p{
     color: #787878;
     font-size: 15px;
     line-height: 30px;
-    margin: 0;
+    margin-bottom: 0;
 }
 @media (max-width: 991.98px) {
     .achsPactos{
@@ -97,6 +97,7 @@ p{
             }
             p{
                 line-height: 18px;
+                margin-bottom: 0;
             }
         }
         &-btn{
